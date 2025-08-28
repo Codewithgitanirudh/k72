@@ -5,7 +5,7 @@ import HomeTopBanner from '../components/home/HomeTopBanner'
 
 const Home = () => {
   return (
-    <div>
+    <div className='relative mb-5 overflow-auto'>
     <div className='h-screen w-screen fixed top-0 left-0'>
         <Video />
     </div>
