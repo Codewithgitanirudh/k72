@@ -1,5 +1,4 @@
-import './App.css'
-import { Route, Routes } from 'react-router-dom'
+import { Link, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Agence from './pages/Agence'
@@ -7,7 +6,7 @@ import Agence from './pages/Agence'
 function App() {
 
   return (
-    <div >
+    <div className='text-white'>
      <Routes>
       <Route path='/' element={<Home />}/>
       <Route path='/projects' element={<Projects />}/>
