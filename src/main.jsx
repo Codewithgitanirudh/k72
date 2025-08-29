@@ -1,13 +1,16 @@
-import { StrictMode } from "react";
+import { StrictMode, useEffect } from "react";
 import "./index.css";
 import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
 import { createRoot } from "react-dom/client";
+import StairAnimation from "./components/StairAnimation.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
+      <StairAnimation>
       <App />
+      </StairAnimation>
     </BrowserRouter>
   </StrictMode>
 );

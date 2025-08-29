@@ -35,7 +35,13 @@ const Agence = () => {
         end: "top -70%",
         pin: true,
         scrub: true,
+        pinSpacing: true,
+        pinReparent: true,
+        pinType: "transform",
+        anticipatePin: 1,
+        invalidateOnRefresh: true,
       },
+
       onUpdate: function () {
         const frameIndex = Math.min(
           totalFrames - 1,
@@ -63,7 +69,7 @@ const Agence = () => {
             />
         </div>
         <div className="font-[lauseanne500] relative">
-          <div className="mt-[55vh]">
+          <div className="pt-[55vh]">
             <h1 className="text-[20vw] text-center uppercase leading-[17vw]">
               Soixan7e Douze
             </h1>
