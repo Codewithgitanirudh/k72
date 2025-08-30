@@ -10,11 +10,47 @@
   src: url(../public/fonts/Lausanne-500.woff2);
 }
 
-:root{
+:root {
   background-color: white;
   color: black;
 }
 
 body {
   overflow-x: hidden;
+}
+
+.moveLink {
+  opacity: 0;
+  transition: all ease 0.3s;
+}
+
+.stick {
+  transition: all ease 0.3s;
+  background-color: white;
+}
+
+.sticks:hover .stick {
+  background-color: black;
+}
+
+.link:hover .moveLink {
+  opacity: 1;
+  height: 100%;
+}
+
+.moveX {
+  animation-name: moveAnimation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
+}
+
+@keyframes moveAnimation {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }

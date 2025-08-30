@@ -6,7 +6,7 @@ import HomeTopBanner from '../components/home/HomeTopBanner'
 const Home = () => {
   return (
     <div className='relative text-white'>
-    <div className='h-[102vh] w-screen fixed top-0 left-0'>
+    <div className='h-screen w-screen fixed top-0 left-0'>
         <Video />
     </div>
     <div className='h-screen w-screen relative flex justify-between flex-col'>

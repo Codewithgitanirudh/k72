@@ -4,12 +4,15 @@ import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 import StairAnimation from "./components/StairAnimation.jsx";
+import MenuContext from "./context/MenuContext.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <StairAnimation>
-      <App />
+        <MenuContext>
+          <App />
+        </MenuContext>
       </StairAnimation>
     </BrowserRouter>
   </StrictMode>
