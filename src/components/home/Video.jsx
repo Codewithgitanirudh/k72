@@ -2,7 +2,7 @@ const Video = () => {
   return (
     <div className="w-full h-full">
       <video
-        src="../../../public/video/83c745cf.mp4"
+        src="/video/83c745cf.mp4"
         autoPlay
         loop
         muted

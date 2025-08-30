@@ -24,13 +24,7 @@ const Projects = () => {
       <div className="pt-[45vh]">
         <h2 className="text-[9.5vw] font-[lauseanne500]">Projects</h2>
       </div>
-      <div className="-mt-20">
         <ProjectCard projectsCardArray={projectsCardArray} />
-        <div className="w-full flex gap-4 mb-4 h-[700px]">
-          <div className="w-1/2 h-full bg-green-900"></div>
-          <div className="w-1/2 h-full bg-green-400"></div>
-        </div>
-      </div>
     </div>
   );
 };
